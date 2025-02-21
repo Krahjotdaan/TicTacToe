@@ -5,8 +5,6 @@ package javaproject_w2;
 
 import org.junit.jupiter.api.Test;
 
-import app.src.main.java.javaproject_w2.Game;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Scanner;
@@ -133,7 +131,7 @@ public class GameTest {
         assertThrows(IllegalArgumentException.class, () -> Game.move(field, Game.Cell.O, scanner));
     }
 
-     @Test
+    @Test
     public void testMove_invalidMove_wrongFormat() {
         Game.Cell[][] field = Game.initGame();
         Scanner scanner = new Scanner("aa");
